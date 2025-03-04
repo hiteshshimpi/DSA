@@ -1,6 +1,7 @@
 package DSA_2Pointers_Problems;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class SameIndexes {
@@ -18,6 +19,6 @@ public class SameIndexes {
                 newList.add(a[i]);
             }
         }
-        System.out.println(newList.toString());
+        System.out.println(Arrays.toString(newList.toArray()));
     }
 }
