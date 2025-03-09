@@ -4,29 +4,31 @@ public class ReverseaString {
 
     public static void main(String[] args) {
 
-        String s = "hitesh";
-        int start = 0;
-        int end = s.length()-1;
-        StringBuilder strNew= new StringBuilder();
-
-        while(end>=0)
+        String s = "wiiw";
+        boolean value = palindrome(s);
+        if(value)
         {
-            if(s.charAt(start)==s.charAt(end))
-            {
+            System.out.println("It is palindrome");
+        }
+        else {
+            System.out.println("It is not palindrome");
+        }
+    }
+
+    static boolean palindrome(String s) {
+        int start = 0;
+        int end = s.length() - 1;
+        StringBuilder strNew = new StringBuilder();
+
+        while (end >= 0) {
+            if (s.charAt(start) == s.charAt(end)) {
                 strNew.append(s.charAt(end));
                 start++;
                 end--;
-            }
-            else
-            {
-                break;
+            } else {
+                return false;
             }
         }
-        System.out.println(strNew);
-       if(strNew.toString().equals(s))
-       {
-           System.out.println("It is Palindrome");
-       }
-
+        return true;
     }
 }
