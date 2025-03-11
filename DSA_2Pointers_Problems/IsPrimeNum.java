@@ -3,7 +3,7 @@ package DSA_2Pointers_Problems;
 public class IsPrimeNum {
 
     public static void main(String[] args) {
-        int num =2;
+        int num =7;
 
         if(num ==0 || num ==1)
         {
@@ -13,13 +13,14 @@ public class IsPrimeNum {
         {
             System.out.println("True, IS prime");
         }
-        if(num % 2 ==0)
+        for(int i =2;i<num;i++)
         {
-            System.out.println("False");
+            if(num % i==0)
+            {
+                System.out.println("false");
+                return;
+            }
         }
-        else
-        {
-            System.out.println("True");
-        }
+        System.out.println("True");
     }
 }
