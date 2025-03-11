@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class ReverseAwordinString {
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder();
-        String s = "My Hitesh Shimpi";
+        String s = "Hitesh Shimpi";
         char chArray[]=new char[0];
         String[] word = s.split(" ");
         System.out.println("Spillted word is  : "+Arrays.toString(word));
