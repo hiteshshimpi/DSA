@@ -8,13 +8,10 @@ public class RotatingDigits {
     public static void main(String[] args) {
         int arr[] = {1, 2, 3};
         int k = 2;
-        rotateLeft(arr,k);
+        rotateRight(arr,k);
     }
 
         public static void rotateRight (int [] arr, int k) {
-
-
-
             if (k <= 0) {
                 k = k + arr.length;
             } else {
